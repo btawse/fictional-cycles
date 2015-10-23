@@ -1,0 +1,351 @@
+/* ----------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------ SITE-WIDE ------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+/* ---------------- GLOBAL RULES ---------------- */
+
+
+body
+{
+	background-color: #eeeeee;
+	margin: 0px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: #333333;
+}
+
+a
+{
+	text-decoration: none;
+	border: 0px;
+	color: #333333;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a img
+{
+	border: 0px;
+}
+
+p
+{
+	line-height: 140%;
+	margin-top: 0px;
+}
+
+h1
+{
+	margin-top: 0px;
+}
+
+h2
+{
+	font-weight: normal;
+}
+
+
+/* ---------------- PAGE STRUCTURE ---------------- */
+
+
+#page
+{
+	margin: auto;
+	width: 977px;
+	background-color: #ffffff;
+}
+
+#top
+{
+	height: 35px;
+}
+
+#head
+{
+	height: 45px;
+	background-color: #eeeeee;
+}
+
+#contact
+{
+	background-color: #222222;
+	color: #ffffff;
+	height: 100px;
+	display: none;
+	padding: 10px;
+}
+
+#content
+{
+	margin: 40px 0px;
+	min-height: 300px;
+}
+
+#rightcolumn
+{
+	display: inline-block;
+	border: 1px solid #bbbbcc;
+	padding: 5px;
+/*	border-radius: 5px;	*/
+	background-color: #eeeefe;
+	margin-left: 17px;
+	width: 291px;
+}
+
+#main
+{
+	float: left;
+	width: 623px;
+	margin-left: 17px;
+}
+
+#banner
+{
+	width: 611px;
+	height: 250px;
+	padding: 5px;
+	margin-bottom: 17px;
+	border: 1px solid #cccccc;
+	z-index: 5;
+	overflow: hidden;
+	position: relative;
+}
+
+#foot
+{
+	font-style: italic;
+	font-size: 10px;
+	text-align: center;
+	color: #666666;
+	padding: 20px;
+	clear: both;
+}
+
+
+/* ---------------- ELEMENT CLASSES ---------------- */
+
+
+h1.logo
+{
+	margin: 0px;
+	padding: 10px;
+	height: 25px;
+	font-size: 22px;
+	color: #0000aa;
+	width: 200px;
+	text-align: center;
+	background-color: #eeee00;
+	display: inline-block;
+	float: left;
+}
+
+ul#nav
+{
+	margin: 0px;
+	display: inline;
+}
+
+ul#nav li
+{
+	list-style-type: none;
+	float: left;
+	display: block;
+	text-transform: uppercase;
+	color: #666666;
+	height: 15px;
+	font-size: 11px;
+	padding: 15px 7px 15px 7px;
+	margin-left: 10px;
+}
+
+ul#nav li:hover
+{
+	color: #000000;
+}
+
+a.toplink
+{
+	font-size: 10px;
+	color: #666666;
+	text-transform: uppercase;
+	position: absolute;
+	padding: 10px;
+	height: 15px;
+}
+
+/* ---------------- BIKE PREVIEW COLUMN ---------------- */
+
+div.bikeprev
+{
+/*	border: 1px solid #333333;	*/
+	min-height: 75px;
+	padding: 3px;
+	margin-bottom: 7px;
+}
+
+div#rightcolumn .header
+{
+	font-weight: bold;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+div.bikeprev img
+{
+	margin: 0px 10px 6px 0px;
+	border: 1px solid #aaaaaa;
+	height: 75px; 
+	width: 100px; 
+	float: left;
+	display: inline-block;
+}
+
+div.bikeprev .brand
+{
+	margin: 0px 3px 4px 0px;
+	display: inline-block;
+	width: 120px;
+	font-weight: normal;
+	font-size: 15px;
+}
+
+div.bikeprev .model
+{
+	margin: 0px 3px 6px 0px;
+	display: inline-block;
+	color: #666666;
+	width: 120px;
+	font-weight: normal;
+}
+
+span.rrp
+{
+	color: #666666;
+	text-decoration: line-through;
+	font-size: 14px;
+	height: 16px;
+	display: block;
+}
+
+strong.price
+{
+	color: #aa0000;
+	font-size: 14px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------ HOME PAGE ------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+#slidecontrol
+{
+	z-index: 6;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	background-color: #cccccc;
+	min-height: 10px;
+	padding-right: 5px;
+}
+
+#slidecontrol ol
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+#slidecontrol ol li
+{
+	list-style-type: none;
+	list-style: none;
+	height: 15px;
+	width: 15px;
+	margin: 5px 0px 5px 5px;
+	background-color: #afb8da;
+	display: inline-block;
+	text-align: center;
+	padding: 2px;
+	font-weight: bold;
+}
+
+#slidecontrol ol li a
+{
+	color: #ffffff;
+}
+
+
+div.slidecaption
+{
+	position: absolute; 
+	top: 25px; 
+	padding: 10px 15px 10px 20px;
+	background-color: #213067; 
+	color: white; 
+	max-width: 300px;
+}
+
+div.slidecaption span.captiontitle
+{
+	margin-bottom: 5px;
+	font-size: 36px;
+	color: white;
+	font-family: Impact;
+	text-transform: uppercase;
+	display: block;
+	line-height: 100%;
+}
+
+div.slidecaption span.subcaption
+{
+	font-size: small;
+	color: #afb8da;
+}
+
+#slider ul, #slider li
+{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+#slider, #slider li
+{
+	width: 611px;
+	height: 250px;
+	overflow: hidden;
+}
+
+#slider li
+{
+	position: absolute;
+	display: none;
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------ BIKE PAGE ------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------------------- */
+
+div#bikepic
+{
+	float: left;
+	margin: 0px 17px 17px 0px;
+	border: 1px solid #cccccc;
+	padding: 5px;
+}
+
+div#bikepic img
+{
+	width: 291px;
+	height: 218px;
+	background-color: #666666;
+}
+
+h1 span.model
+{
+	color: #666666;
+}

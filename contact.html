@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns = "http://www.w3.org/1999/xhtml" xml:lang = "en" lang = "en">
+	<head>
+		<link rel = "stylesheet" type = "text/css" href = "style.css" />
+		<title>Fictional Cycles | Home</title>
+		<script type = "text/javascript" src = "js/jquery.js"></script>
+		<script type = "text/javascript" src = "http://maps.google.com/maps/api/js?sensor=false"></script>
+		<script type = "text/javascript">		
+			$(document).ready(function(){
+				var latlng = new google.maps.LatLng(51.501364, -0.14189);
+    			var myOptions = {
+     				zoom: 16,
+     				center: latlng,
+    				mapTypeId: google.maps.MapTypeId.HYBRID
+   			 	};
+    			var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+    			var marker = new google.maps.Marker({
+     				position: latlng, 
+     				map: map, 
+    				title: "Fictional Cycles"
+  				});   
+			});
+			function toggleSitemap() {
+				$('#contact').slideToggle(500);
+			}
+		</script>
+	</head>
+	<body>
+		<div id = "page">
+			<div id = "top">
+				<a class = "toplink" href = "#" onclick = "toggleSitemap()">Sitemap</a>
+			</div>
+			<div id = "head">
+				<a href = "index.php"><h1 class = "logo">Fictional Cycles</h1></a>
+				<ul id = "nav">
+					<a href = "index.php"><li>Home</li></a>
+					<li>Bikes</li>
+					<li>Repairs</li>
+					<li>Accessories</li>
+					<li>Hire</li>
+					<li>Sell/Exchange</li>
+					<a href = "cyclescheme.html"><li>Cyclescheme</li></a>
+					<a href = "contact.html"><li>Contact</li></a>
+				</ul>
+			</div>
+			<div id = "contact">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet turpis dolor. 
+					Nunc orci nunc, porta vitae imperdiet nec, scelerisque pharetra quam. Vestibulum et purus 
+					gravida justo ultrices consectetur. Nullam sed risus vitae tellus accumsan pretium. 
+					Maecenas id feugiat quam. Proin eleifend cursus mauris, a venenatis ligula porttitor nec. 
+					Etiam ullamcorper interdum enim, a lobortis massa feugiat a. Donec porta vulputate congue. 
+					In pretium volutpat lectus ac venenatis. Morbi id consequat tellus. Cras a dapibus diam. 
+					Nunc ornare rhoncus nunc, eget euismod mi vulputate eget. Mauris vitae eros sed mauris 
+					mollis adipiscing quis eu ligula. In turpis enim, euismod id mattis eget, consequat ac 
+					odio. Duis congue imperdiet augue, ut sagittis nunc mollis dignissim. Sed dictum, nulla 
+					luctus lacinia mollis, metus sem ultrices quam, vel pellentesque nisl justo sed turpis. 
+					Sed in erat vel diam feugiat aliquet vel nec sem. Nulla quis commodo ipsum.</p>
+			</div>
+			<div id = "content">
+				<div id = "main">
+					<div id = "map_canvas" style = "width: 623px; height: 300px; margin-bottom: 20px;"></div>
+					
+				</div>
+				<div id = "rightcolumn">
+					<span class = "header">Address</span>
+					<p>
+						Fictional Cycles Ltd.<br />
+						123 Fictional Road<br />
+						Fictionville<br />
+						Fictionshire<br />
+						AA1 1AA<br />
+						Tel: 123 4567 8901
+					</p>
+				</div>
+			</div>
+			<div id = "foot">
+				<p>
+					&copy;2011 Fictional Cycles Ltd.<br />
+					123 Fictional Road<br />
+					Fictionville<br />
+					Fictionshire<br />
+					AA1 1AA<br />
+					Tel: 123 4567 8901
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
