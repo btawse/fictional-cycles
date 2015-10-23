@@ -1,4 +1,5 @@
-Fictional Bikes
+Fictional Cycles
+================
 
 This is the beginnings of a website that I made in 2011 for a local bike shop (in the end it wasn't used). One thing they wanted was to be able to show their current bikes on their site, so I started making this with a MySQL database to store bike information, and I planned to add CMS features later so they could add bikes to the site when needed. It uses:
 
